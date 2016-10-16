@@ -1,0 +1,16 @@
+/*webkit-sassui-ellipsis Start*/
+.ellipsis, .test-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/*webkit-sassui-ellipsis End*/
+.test-ellipsis {
+  max-width: 80%;
+  height: 30px;
+  line-height: 30px;
+  margin: 50px auto;
+  border: 1px solid #eee;
+}

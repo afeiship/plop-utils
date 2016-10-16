@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-ellipsis",
+  "description": "webkit sass ui module for text overflow ellipsis.",
+  "main": [
+    "dist/ellipsis.css",
+    "dist/ellipsis.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "ellipsis"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-cssui-absolute-center",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

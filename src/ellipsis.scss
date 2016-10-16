@@ -1,0 +1,13 @@
+/*webkit-sassui-ellipsis Start*/
+.ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  overflow: hidden;
+}
+@mixin ellipsis($inHeight,$inWidth) {
+  max-width: $inWidth;
+  height:$inHeight;
+  line-height: $inHeight;
+}
+/*webkit-sassui-ellipsis End*/
