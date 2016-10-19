@@ -1,0 +1,26 @@
+/*webkit-sassui-ellipsis Start*/
+.webkit-sassui-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.webkit-sassui-ellipsis-multiline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+@mixin webkit-sassui-ellipsis($inHeight,$inWidth) {
+   @extend .webkit-sassui-ellipsis;
+  max-width: $inWidth;
+  height: $inHeight;
+  line-height: $inHeight;
+}
+@mixin webkit-sassui-ellipsis-multiline($inLine:1) {
+   @extend .webkit-sassui-ellipsis-multiline;
+  -webkit-line-clamp: $inLine;
+}
+/*webkit-sassui-ellipsis End*/

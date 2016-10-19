@@ -1,7 +1,24 @@
-@import "../dist/ellipsis.scss";
+@import "../dist/webkit-sassui-ellipsis.scss";
 .test-ellipsis{
-  @extend .ellipsis;
-  @include ellipsis(30px,80%);
+  @include webkit-sassui-ellipsis(30px,80%);
   margin:50px auto;
   border:1px solid #eee;
+}
+
+[class*='line']{
+  border: 1px solid #eee;
+  // padding:10px;
+  margin-bottom: 20px;
+}
+.line1{
+  @include webkit-sassui-ellipsis-multiline;
+}
+.line2{
+  @include webkit-sassui-ellipsis-multiline(2);
+}
+.line3{
+  @include webkit-sassui-ellipsis-multiline(3);
+}
+.line4{
+  @include webkit-sassui-ellipsis-multiline(4);
 }

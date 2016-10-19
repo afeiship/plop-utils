@@ -2,8 +2,8 @@
   "name": "webkit-sassui-ellipsis",
   "description": "webkit sass ui module for text overflow ellipsis.",
   "main": [
-    "dist/ellipsis.css",
-    "dist/ellipsis.scss"
+    "dist/webkit-sassui-ellipsis.css",
+    "dist/webkit-sassui-ellipsis.scss"
   ],
   "authors": [
     "afei"
