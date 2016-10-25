@@ -8,8 +8,6 @@
 
 .webkit-sassui-ellipsis-multiline {
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
