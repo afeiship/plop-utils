@@ -11,7 +11,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
-@mixin webkit-sassui-ellipsis($inHeight,$inWidth) {
+@mixin webkit-sassui-ellipsis-single($inHeight,$inWidth) {
    @extend .webkit-sassui-ellipsis;
   max-width: $inWidth;
   height: $inHeight;

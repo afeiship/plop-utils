@@ -1,6 +1,6 @@
 @import "../dist/webkit-sassui-ellipsis.scss";
 .test-ellipsis{
-  @include webkit-sassui-ellipsis(30px,80%);
+  @include webkit-sassui-ellipsis-single(30px,80%);
   margin:50px auto;
   border:1px solid #eee;
 }
