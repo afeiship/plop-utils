@@ -28,7 +28,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "fast-glob": "^3.3.2"
+    "fast-glob": "^3.3.2",
+    "git-user-info": "^2.0.3"
   },
   "keywords": [
     "app",
