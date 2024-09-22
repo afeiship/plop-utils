@@ -1,6 +1,6 @@
 {
   "name": "@jswork/plop-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plop notes.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
@@ -30,5 +30,15 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.2"
-  }
+  },
+  "keywords": [
+    "app",
+    "generator",
+    "plop",
+    "slim",
+    "template",
+    "tpl",
+    "utils",
+    "yo"
+  ]
 }
