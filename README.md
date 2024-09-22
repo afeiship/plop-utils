@@ -9,18 +9,42 @@
 ## installation
 ```shell
 npm install @jswork/plop-utils
+yarn add dayjs
 ```
 
 ## usage
 ```js
-import plopUtils from '@jswork/plop-utils';
+import { load, metadata } from '@jswork/plop-utils';
 
-// usage goes here.
-```
+// plopfile.js
+export default async function (plop) {
+  await load(plop);
+}
 
-## types
-```ts
-/// <reference types="@jswork/plop-utils/global.d.ts" />
+// a generator file
+export default function (
+  /** @type {import('plop').NodePlopAPI} */
+  plop
+) {
+  plop.setGenerator('component', {
+    description: 'Create a component',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: "What is this component's name?"
+      }
+    ],
+    actions: [
+      {
+        type: 'addMany',
+        destination: 'src/components/{{ name }}/',
+        templateFiles: '.templates/component/*.hbs',
+        data: metadata
+      }
+    ]
+  });
+}
 ```
 
 ## license
