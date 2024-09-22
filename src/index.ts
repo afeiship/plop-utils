@@ -1,5 +1,6 @@
 import fg from 'fast-glob';
 import { getGitUserInfo } from 'git-user-info';
+import dayjs from 'dayjs';
 
 interface Options {
   pattern?: string | string[],
@@ -21,15 +22,7 @@ const load = async (plop: any, options?: any) => {
 
 const metadata = async () => {
   const user = await getGitUserInfo();
-  const date = new Date().toLocaleString('zh-CN', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false,
-  }).replace(/\//g, '-');
+  const date = dayjs().format('YYYY-MM-DD HH:mm:ss');
 
   return {
     name: user.name,
