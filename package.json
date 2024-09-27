@@ -28,6 +28,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
+    "clipboardy": "^4.0.0",
     "dayjs": "*",
     "fast-glob": "^3.3.2",
     "git-user-info": "^2.0.3"
