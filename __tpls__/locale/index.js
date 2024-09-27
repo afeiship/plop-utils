@@ -2,15 +2,17 @@
  * @Author: aric 1290657123@qq.com
  * @Date: 2024-09-27 22:35:49
  * @LastEditors: aric 1290657123@qq.com
- * @LastEditTime: 2024-09-27 22:38:00
+ * @LastEditTime: 2024-09-27 22:52:58
  */
 
 import { metadata } from '@jswork/plop-utils';
 import clipboardy from 'clipboardy';
+import { URL } from 'url';
+const __dirname = new URL('.', import.meta.url).pathname;
 
 export default function (
   /** @type {import('plop').NodePlopAPI} */
-  plops
+  plop
 ) {
   plop.setGenerator('npm.locale', {
     description: 'Create a locale file for a component.',
@@ -27,7 +29,7 @@ export default function (
         {
           type: 'add',
           path: `${data.path}/locale.yml`,
-          templateFile: '.templates/__raw__/locale/locale.yml.hbs',
+          templateFile: `${__dirname}/tpl.yml`,
           data: metadata,
         },
       ];

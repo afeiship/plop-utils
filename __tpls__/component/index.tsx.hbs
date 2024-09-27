@@ -1,0 +1,23 @@
+/**
+ * @email: {{ email }}
+ * @description: A React component.
+ * @updated_at: {{ datetime }}
+ */
+
+import { HTMLAttributes } from 'react';
+import cx from 'classnames';
+
+type IProps = HTMLAttributes<HTMLDivElement>;
+
+const Anonymous = (props: IProps) => {
+  const { className, children, ...rest } = props;
+  const { t } = nx.useIntl('src.shared.components.{{dashCase name }}');
+  return (
+    <div className={cx('relative', className)} {...rest}>
+      {t('title')}
+      {children}
+    </div>
+  );
+};
+
+export default Anonymous;

@@ -7,7 +7,10 @@ interface Options {
 }
 
 const defaults: Options = {
-  pattern: './.templates/**/index.js',
+  pattern: [
+    './.templates/**/index.js',
+    'node_modules/@jswork/plop-utils/__tpls__/**/index.js'
+  ],
 };
 
 const load = async (plop: any, options?: any) => {
