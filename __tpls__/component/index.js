@@ -1,3 +1,10 @@
+/**
+ * @Author: aric 1290657123@qq.com
+ * @Date: 2024-09-27 22:35:49
+ * @LastEditors: aric 1290657123@qq.com
+ * @LastEditTime: 2024-09-27 22:58:56
+ */
+
 import { metadata } from '@jswork/plop-utils';
 import { URL } from 'url';
 const __dirname = new URL('.', import.meta.url).pathname;
