@@ -1,8 +1,8 @@
 ###
- # @Author: aric 1290657123@qq.com
- # @Date: 2024-09-27 22:36:03
+ # @Author: {{ user.name }} {{ user.email }}
+ # @Date: {{ datetime }}
  # @LastEditors: aric 1290657123@qq.com
- # @LastEditTime: 2024-09-27 22:39:14
+ # @LastEditTime: 2024-09-28 12:10:14
 ###
 
 id: {{ dotCase path }}

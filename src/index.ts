@@ -2,15 +2,14 @@ import fg from 'fast-glob';
 import { getGitUserInfo } from 'git-user-info';
 import dayjs from 'dayjs';
 
+const NODE_PLOP_UTILS = 'node_modules/@jswork/plop-utils';
+
 interface Options {
-  pattern?: string | string[],
+  pattern?: string | string[];
 }
 
 const defaults: Options = {
-  pattern: [
-    './.templates/**/index.js',
-    'node_modules/@jswork/plop-utils/__tpls__/**/index.js'
-  ],
+  pattern: ['./.templates/**/index.js', `${NODE_PLOP_UTILS}/__tpls__/**/index.js`],
 };
 
 const load = async (plop: any, options?: any) => {
@@ -25,14 +24,12 @@ const load = async (plop: any, options?: any) => {
 
 const metadata = async () => {
   const user = await getGitUserInfo();
-  const date = dayjs().format('YYYY-MM-DD HH:mm:ss');
+  const datetime = dayjs().format('YYYY-MM-DD HH:mm:ss');
 
   return {
-    name: user.name,
-    email: user.email,
-    datetime: date,
+    user,
+    datetime,
   };
 };
-
 
 export { load, metadata };
