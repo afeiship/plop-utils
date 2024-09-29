@@ -2,7 +2,7 @@
 * @Author: {{ user.name }} {{ user.email }}
 * @Date: {{ datetime }}
 * @LastEditors: aric 1290657123@qq.com
-* @LastEditTime: 2024-09-29 08:25:02
+* @LastEditTime: 2024-09-29 08:33:59
 */
 
 import { HTMLAttributes } from 'react';
@@ -10,7 +10,7 @@ import cx from 'classnames';
 
 type IProps = HTMLAttributes<HTMLDivElement>;
 
-const Anonymous = (props: IProps) => {
+const {{ titleCase name }} = (props: IProps) => {
   const { className, children, ...rest } = props;
   const { t } = nx.useIntl('src.shared.components.{{dashCase name }}');
   return (
@@ -21,4 +21,4 @@ const Anonymous = (props: IProps) => {
   );
 };
 
-export default Anonymous;
+export default {{ titleCase name }};
