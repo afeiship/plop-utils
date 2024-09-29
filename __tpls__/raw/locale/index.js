@@ -2,7 +2,7 @@
  * @Author: aric 1290657123@qq.com
  * @Date: 2024-09-27 22:35:49
  * @LastEditors: aric 1290657123@qq.com
- * @LastEditTime: 2024-09-28 09:35:02
+ * @LastEditTime: 2024-09-28 19:33:33
  */
 
 import { metadata } from '@jswork/plop-utils';
@@ -13,7 +13,8 @@ const __dirname = new URL('.', import.meta.url).pathname;
 
 export default function (
   /** @type {import('plop').NodePlopAPI} */
-  plop
+  plop,
+  options = {}
 ) {
   plop.setGenerator('raw.locale', {
     description: 'Create a locale file for a component.',

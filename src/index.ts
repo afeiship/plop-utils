@@ -6,19 +6,21 @@ const NODE_PLOP_UTILS = 'node_modules/@jswork/plop-utils';
 
 interface Options {
   pattern?: string | string[];
+  basePath?: string;
 }
 
 const defaults: Options = {
   pattern: ['./.templates/**/index.js', `${NODE_PLOP_UTILS}/__tpls__/**/index.js`],
+  basePath: 'src/shared',
 };
 
 const load = async (plop: any, options?: any) => {
-  const { pattern } = { ...defaults, ...options } as Required<Options>;
+  const { pattern, ...rest } = { ...defaults, ...options } as Required<Options>;
   const templates = await fg(pattern, { absolute: true });
 
   for (const template of templates) {
     const generator = await import(template);
-    generator.default(plop);
+    generator.default(plop, rest);
   }
 };
 
