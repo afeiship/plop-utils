@@ -1,6 +1,6 @@
 {
   "name": "@jswork/plop-utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Plop notes.",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
