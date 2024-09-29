@@ -2,7 +2,7 @@
  * @Author: aric 1290657123@qq.com
  * @Date: 2024-09-27 22:35:49
  * @LastEditors: aric 1290657123@qq.com
- * @LastEditTime: 2024-09-29 08:22:01
+ * @LastEditTime: 2024-09-29 11:11:13
  */
 
 import { metadata } from '@jswork/plop-utils';
@@ -33,11 +33,11 @@ export default function (
         default: componentPath,
         choices: [
           {
-            name: `components(default: ${componentPath})`,
+            name: `components (default: ${componentPath})`,
             value: componentPath,
           },
           {
-            name: `clipboard(default: ${clipboardPath})`,
+            name: `clipboard (default: ${clipboardPath})`,
             value: clipboardPath,
           },
         ],
