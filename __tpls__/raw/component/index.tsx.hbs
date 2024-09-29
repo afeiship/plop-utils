@@ -2,7 +2,7 @@
 * @Author: {{ user.name }} {{ user.email }}
 * @Date: {{ datetime }}
 * @LastEditors: aric 1290657123@qq.com
-* @LastEditTime: 2024-09-29 08:39:29
+* @LastEditTime: 2024-09-29 08:40:07
 */
 
 import { HTMLAttributes } from 'react';
@@ -16,14 +16,11 @@ const defaults:IProps = {
 
 const {{ pascalCase name }} = (props: IProps) => {
   const { className, children, ...rest } = {...defaults, ...props };
-  const { t } = nx.useIntl('src.shared.components.{{dashCase name }}');
   return (
     <div className={cx('relative', className)} {...rest}>
-      {t('title')}
       {children}
     </div>
   );
 };
 
 export default {{ pascalCase name }};
-
